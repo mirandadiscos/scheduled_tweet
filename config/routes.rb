@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   get "sign_in", to: "sessions#new"
   post "sign_in", to: "sessions#create"
 
+  get "/auth/twitter/callback", to: "omniauth_callbacks#twitter"
+
   root to: "main#index"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
