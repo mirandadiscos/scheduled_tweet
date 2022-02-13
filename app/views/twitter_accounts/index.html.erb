@@ -1,0 +1,10 @@
+<div class="d-flex align-items-center justify-content-between">
+  <h1>Twitter Accounts</h1>
+  <%= link_to "Connect a twitter account ", "auth/twitter",method: :post, class: "btn btn-primary" %>
+  <% @twitter_accounts.each do |twitter|%>
+    <div class = "d-flex align-items-center mb-4">
+      <%= image_tag twitter.image, class: "rounded-circle" %>
+      <%= link_to "@#{twitter.username}","https://twitter.com/#{twitter.username}",target: :_blank %>
+    </div>
+  </div>
+<% end %>
