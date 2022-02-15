@@ -62,3 +62,5 @@ gem "omniauth-twitter", "~> 1.4"
 gem "twitter", "~> 7.0"
 
 gem "sidekiq", "~> 6.4"
+
+gem "pg", "~> 1.3"
