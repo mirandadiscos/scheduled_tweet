@@ -63,4 +63,4 @@ gem "twitter", "~> 7.0"
 
 gem "sidekiq", "~> 6.4"
 
-gem "pg", "~> 1.3"
+gem "pg", "~> 1.3", group: :production
